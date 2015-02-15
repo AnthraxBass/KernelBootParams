@@ -1,6 +1,6 @@
 #!/system/bin/sh
 
-# disable slide2wake Gustavo_s feature
+# Disable slide2wake Gustavo_s feature : 
 echo 0 > /sys/devices/virtual/sec/sec_touchscreen/tsp_slide2wake
 
 # Battery Optimization :
@@ -39,3 +39,6 @@ echo 2048 > /sys/devices/virtual/bdi/default/read_ahead_kb
 
 # Kernel Performance :
 echo 0 > /proc/sys/kernel/kptr_restrict
+
+# Disable IPv6 : 
+sysctl net.ipv6.conf.default.disable_ipv6
